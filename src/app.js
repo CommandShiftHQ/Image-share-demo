@@ -3,7 +3,10 @@ const express = require('express');
 const app = express();
 
 app.use(express.json());
+app.use(express.static('public'))
 
-app.get('/', (_, res) => res.status(200).send('Hello World!'));
+app.get('*', (_, res) => {
+    res.redirect('/');
+});
 
 module.exports = app;
