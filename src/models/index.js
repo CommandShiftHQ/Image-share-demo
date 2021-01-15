@@ -12,11 +12,11 @@ const setupDatabase = () => {
     logging: false,
   });
 
-  const Post = postModel(connection, Sequelize); 
+  const Posts = postModel(connection, Sequelize); 
 
   connection.sync({ alter: true });
   return {
-    Post
+    Posts
   };
 };
 
