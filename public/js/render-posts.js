@@ -13,7 +13,7 @@ async function getPosts() {
 function renderPost(postData) {
   const parent = document.getElementById('post-cards');
 
-  const postCard = document.createElement('div');
+  const postCard = document.createElement('article');
   const title = document.createElement('h3');
   const date = document.createElement('h4');
   const image = document.createElement('img');
