@@ -10,19 +10,19 @@
         <h1>Add Posts</h1>
     </header>
     <main>
-        <form onsubmit="submitForm()">
+        <form onsubmit="submitForm(event)">
             <div class="field">
-                <label for="ftitle">Title</label>
+                <label for="ftitle">Title:</label>
                 <input type="text" id="ftitle" name="title" />
             </div>
 
             <div>
-                <label for="fimage">Image</label>
+                <label for="fimage">Image:</label>
                 <input type="file" name="image" id="fimage">
             </div>
 
             <div class="field">
-                <label for="fcomment">Comment</label>
+                <label for="fcomment">Comment:</label>
                 <textarea type="text" id="comment" name="comment" rows="5" cols="50"></textarea>
             </div>
 
