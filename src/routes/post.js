@@ -5,9 +5,10 @@ const router = express.Router();
 
 router.route('/')
     .post(postController.create)
-    .get(postController.read);
+    .get(postController.readAll);
 
 router.route('/:id')
+    .get(postController.read)
     .patch(postController.update)
     .delete(postController.delete);
 
