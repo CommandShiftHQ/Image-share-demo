@@ -7,7 +7,7 @@ async function getPosts() {
 
   } catch (error) {
     console.log(error)
-  }   
+  }  
 }
 
 function renderPost(postData) {
