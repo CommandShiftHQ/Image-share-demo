@@ -11,10 +11,10 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                notNull: { msg: 'content url is required' }
+                notNull: { msg: 'image url is required' }
             }
         },
-        content: {
+        comment: {
             type: DataTypes.STRING 
         }
     }

@@ -17,12 +17,12 @@ function renderPost(postData) {
   const title = document.createElement('h3');
   const date = document.createElement('h4');
   const image = document.createElement('img');
-  const content = document.createElement('p')
+  const comment = document.createElement('p')
 
   postCard.className = 'post-card';
 
   title.innerHTML = postData.title;
-  content.innerHTML = postData.content;
+  comment.innerHTML = postData.comment;
   date.innerHTML = new Date(postData.createdAt).toDateString();
 
   image.src = postData.imageUrl;
@@ -30,7 +30,7 @@ function renderPost(postData) {
   postCard.appendChild(title);
   postCard.appendChild(date);
   postCard.appendChild(image);
-  postCard.appendChild(content);
+  postCard.appendChild(comment);
 
   parent.appendChild(postCard);
 }
