@@ -6,6 +6,30 @@
     <title>Blog Admin</title>
 </head>
 <body>
-    <h1>Hello Admin!</h1>
+    <header>
+        <h1>Add Posts</h1>
+    </header>
+    <main>
+        <form>
+            <div class="field">
+                <label for="ftitle">Title</label>
+                <input type="text" id="ftitle" name="title" />
+            </div>
+
+            <div>
+                <label for="fimage">Image</label>
+                <input type="file" name="image" id="fimage">
+            </div>
+
+            <div class="field">
+                <label for="fcomment">Comment</label>
+                <textarea type="text" id="comment" name="comment" rows="5" cols="50"></textarea>
+            </div>
+
+            <di>
+                <input type="submit" value="Submit">
+            </di>
+        </form>
+    </main>
 </body>
 </html>
