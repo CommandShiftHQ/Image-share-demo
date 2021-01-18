@@ -155,7 +155,7 @@ Next, we need to add our `upload` to our middlware chain:
 
 ...
 router.route('/')
-    .post(upload.single('file'), storeFile, postController.create)
+    .post(upload.single('file'), postController.create)
     .get(postController.readAll);
 ...
 ```
