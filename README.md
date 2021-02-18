@@ -116,9 +116,10 @@ Click `review policy`, it should look something like this:
 }
 ```
 
-Finally, you should add your app user keys to your `.env`:
+Finally, you should add your app user keys and bucket details to your `.env`:
 
 ```bash
+BUCKET_NAME=[BUCKET_NAME]
 BUCKET_URL=https://[BUCKET_NAME].s3-[BUCKET_REGION].amazonaws.com
 AWS_ACCESS_KEY_ID=[APP_USER_KEY]
 AWS_SECRET_ACCESS_KEY=[APP_USER_SECRET]
